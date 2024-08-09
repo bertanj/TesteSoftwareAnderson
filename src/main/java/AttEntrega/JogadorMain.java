@@ -74,7 +74,7 @@ public class JogadorMain {
         Jogador jogadorHeaviest = null;
 
         for (int i = 0; i < jogadores.size(); i++) {
-            jogadorHeaviest = jogadores.get(i);
+            jogadorHeaviest = jogadores.get(1);
             if (jogadores.get(i).getPeso() > jogadorHeaviest.getPeso()) {
                 jogadorHeaviest = jogadores.get(i);
             }
@@ -98,7 +98,7 @@ public class JogadorMain {
         Jogador jogadorHigher = null;
 
         for (int i = 0; i < jogadores.size(); i++) {
-            jogadorHigher = jogadores.get(i);
+            jogadorHigher = jogadores.get(0);
             if (jogadores.get(i).getAltura() > jogadorHigher.getAltura()) {
                 jogadorHigher = jogadores.get(i);
             }

@@ -16,35 +16,36 @@ public class Jogador {
         this.setIdade(2024 - this.getAnoNasc());
     }
 
-    public void calcularAposentadoria(){
+    public boolean calcularAposentadoria(){
         if (this.getPosicao().equals("DEF")){
             if (this.getIdade() >= 40){
-                System.out.println("Aposentado");
                 this.setAposentado(true);
+                return getAposentado();
             } else{
                 int i = 40 - this.getIdade();
-                System.out.println("tempo restante para se aposentar: "+ i);
                 this.setAposentado(false);
+                return getAposentado();
             }
         }else if(this.getPosicao().equals("MEI")){
             if (this.getIdade() >= 38){
-                System.out.println("Aposentado");
                 this.setAposentado(true);
+                return getAposentado();
             } else{
                 int i = 38 - this.getIdade();
-                System.out.println("tempo restante para se aposentar: "+ i);
                 this.setAposentado(false);
+                return getAposentado();
             }
         }else if (this.getPosicao().equals("ATA")){
             if (this.getIdade() >= 35){
-                System.out.println("Aposentado");
                 this.setAposentado(true);
+                return getAposentado();
             } else{
-                System.out.println("Posição não encontrada em nosso sistema. Verifique se foi escrita corretamente!");
+                int i = 35 - this.getIdade();
                 this.setAposentado(false);
+                return getAposentado();
             }
-
         }
+        return getAposentado();
     }
 
     //Metodos especiais
